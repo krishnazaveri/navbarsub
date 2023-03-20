@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar task</title>
+    <style>
+        .nav 
+            {
+
+                background: gray;
+                text-align: center;
+                padding: 25px 0;
+            }
+
+        .nav .menu 
+            {
+                display: inline;
+                margin: 0px 10px;
+                position: relative;
+            }
+
+        .nav a 
+            {
+                text-decoration: none;
+                color:#000;
+                font-size: 22px;
+            }
+
+            .nav .menu .y{
+                display: none;
+                position: absolute;
+                top: 20px;
+                left: 0;
+                margin: 0px;
+                list-style: none;
+                padding: 0px;
+                text-align: left;
+                width: 165px;
+                border: 1px solid;
+            }
+
+            .nav .menu:hover .y{
+                display: block;
+            }
+
+            .nav .menu .y .dropdwn  {
+                display: inline;
+                margin: 0px 10px;
+                position: relative;
+            }
+
+            .nav .menu .y .dropdwn .sub { 
+                display: none;
+                position: absolute;
+                top: 0px;
+                left: 155px;
+                margin: 0px;
+                list-style: none;
+                padding: 0px;
+                text-align: left;
+                width: 165px;
+                border: 1px solid;
+            
+            }
+            .nav .menu .y .dropdwn:hover .sub { display: block;}
+
+    </style>
+</head>
+<body>
+
+    <ul class="nav">
+        <li class="menu"><a href="#">Home</a></li>
+        <li class="menu"><a href="#">Features</a></li>
+        <li class="menu"><a href="#">Portfolio</a></li>
+
+        <li class="menu"><a href="#">Blog</a>
+            <ul class="y">
+                <li class="dropdwn"><a href="#">Large Image</a></li>
+
+                <li class="dropdwn"><a href="#">Medium Image</a>
+                    <ul class="sub">
+                        <li><a href="#">Image1</a></li>
+                        <li><a href="#">Image2</a></li>
+                        <li><a href="#">Image3</a></li>
+                        <li><a href="#">Image4</a></li>
+                    </ul>
+                
+                </li>
+                   
+                <li class="dropdwn"><a href="#">Masony</a></li>
+                <li class="dropdwn"><a href="#">Pages</a></li>
+            </ul>
+        
+        </li>
+
+        <li class="menu"><a href="#">Contact</a></li>
+    </ul>
+    
+</body>
+</html>
